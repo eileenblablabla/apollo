@@ -209,6 +209,9 @@ Status ControlComponent::ProduceControlCommand(
     estop_reason_ = "estop for empty planning trajectory, planning headers: " +
                     local_view_.trajectory.header().ShortDebugString();
   }
+    
+    
+    
 
   if (!estop_) {
     if (local_view_.chassis.driving_mode() == Chassis::COMPLETE_MANUAL) {
